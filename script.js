@@ -10,7 +10,7 @@ if (localStorage.getItem('notes') === null) {
 const MOK_ARRAY = JSON.parse(localStorage.getItem('notes'))
 // const MOK_COLORS = JSON.parse(localStorage.getItem('colors'))
 
-window.addEventListener('beforeunload', () => {
+window.addEventListener('visibilitychange', () => {
     localStorage.setItem('notes', JSON.stringify(model.notes))
     // localStorage.setItem('colors', JSON.stringify(model.colors))
 });
