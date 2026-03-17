@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <img src="./aseets/image/Notes.svg" alt="Main-image">
+                <div class="notes-count">
+                    <img src="./aseets/image/notes-count.svg" alt="Notes">
+                    <div>
+                        <span class="count-text">Всего заметок: <b class="count">5</b></span>
+                        <span class="count-text">Избранных: <b class="count-fav">5</b></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="form-section">
+        <div class="container">
+            <form class="form">
+                <div class="note-name-block">
+                    <p class="form-text">Название заметки</p>
+                    <input type="text" class="note-name">
+                </div>
+                <div class="note-content-block">
+                    <div class="note-text-block">
+                        <p class="form-text">Описание новой заметки</p>
+                        <textarea name="text" class="note-text" id=""></textarea>
+                    </div>
+                    <div class="note-color-block">
+                        <p class="form-text">Выберите цвет заметки</p>
+                        <ul class="color-list">
+                            <!-- <li class="color-option">
+                                <div class="circle yellow"></div>
+                            </li>
+                            <li class="color-option">
+                                <div class="circle green"></div>
+                            </li>
+                            <li class="color-option selected">
+                                <div class="circle blue"></div>
+                            </li>
+                            <li class="color-option">
+                                <div class="circle red"></div>
+                            </li>
+                            <li class="color-option">
+                                <div class="circle pirple"></div>
+                            </li> -->
+                        </ul>
+                        <button type="submit" class="button"><img src="./aseets/image/plus.svg">Добавить заметку</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <section class="notes-section">
+        <div class="container">
+            <div class="favorite-block">
+                <input type="checkbox" id="only-favor" class="favor-checkbox">
+                <label for="only-favor" class="checkbox-label">Показать только избранные заметки</label>
+            </div>
+
+            <div class="notes-wrapper">
+                <!-- <article class="note">
+                    <div class="note-header yellow ">
+                        <h2 class="note-title">Flexbox (CSS)</h2>
+                        <div class="note-icons">
+                            <img src="./aseets/image/heart-inactive.svg" alt="heart">
+                            <img src="./aseets/image/trash.svg" alt="trash">
+                        </div>
+                    </div>
+                    <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </article>
+                <article class="note">
+                    <div class="note-header green ">
+                        <h2 class="note-title">Объекты (JavaScript)</h2>
+                        <div class="note-icons">
+                            <img src="./aseets/image/heart-inactive.svg" alt="heart">
+                            <img src="./aseets/image/trash.svg" alt="trash">
+                        </div>
+                    </div>
+                    <p class="note-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+                <article class="note">
+                    <div class="note-header blue">
+                        <h2 class="note-title">Объекты (JavaScript)</h2>
+                        <div class="note-icons">
+                            <img src="./aseets/image/heart-inactive.svg" alt="heart">
+                            <img src="./aseets/image/trash.svg" alt="trash">
+                        </div>
+                    </div>
+                    <p class="note-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </p>
+                </article>
+                <article class="note">
+                    <div class="note-header red">
+                        <h2 class="note-title">Flexbox (CSS)</h2>
+                        <div class="note-icons">
+                            <img src="./aseets/image/heart-inactive.svg" alt="heart">
+                            <img src="./aseets/image/trash.svg" alt="trash">
+                        </div>
+                    </div>
+                    <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </article>
+                <article class="note">
+                    <div class="note-header pirple">
+                        <h2 class="note-title">Объекты (JavaScript)</h2>
+                        <div class="note-icons">
+                            <img src="./aseets/image/heart-inactive.svg" alt="heart">
+                            <img src="./aseets/image/trash.svg" alt="trash">
+                        </div>
+                    </div>
+                    <p class="note-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+                        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat.
+                    </p>
+                </article> -->
+
+
+                
+            </div>
+        </div>
+    </section>
+    
+    <div class="massage-box">
+    
+    </div>
+    
+
+    <!-- <div class="done">
+        <img src="./aseets/image/Done.svg" alt="done">
+        <p>Заметка добавлена</p>
+    </div> -->
+    <script src="./script.js"></script>
+</body>
+</html>

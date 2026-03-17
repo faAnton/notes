@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./aseets/fonts/Montserrat-VariableFont_wght.woff2') format('woff2'),
+        url('./aseets/fonts/Montserrat-VariableFont_wght.woff') format('woff'),
+        url('./aseets/fonts/Montserrat-VariableFont_wght.ttf') format('ttf');
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 375px;
+    font-family: "Montserrat";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    all: unset; 
+}
+
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    background-color: #fafafc;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1182px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: white;
+    max-width: 100%;
+    height: 60px;
+    box-shadow: 0 1px 3px 0 rgba(11, 12, 13, 0.16), 0 0 1px 0 rgba(11, 12, 13, 0.24);
+}
+
+.header-wrapper {
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notes-count {
+    display: flex;
+    
+    gap: 12px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: right;
+
+}
+
+.notes-count div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-section {
+    padding: 24px 0;
+}
+
+.form {
+    border-radius: 4px;
+    padding: 24px;
+    box-shadow: 0 8px 12px 0 rgba(11, 12, 13, 0.08), 0 16px 24px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+    background: #fff;
+}
+
+.form-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: #919191;
+}
+
+.note-name-block {
+    margin-bottom: 12px;
+}
+
+.note-name {
+    outline: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 6px 12px;
+    width: 344px;
+    height: 36px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #000;
+
+
+    cursor: text;
+}
+
+.note-content-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.note-text-block {
+    flex: 2;
+}
+
+.note-text {
+    resize: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 6px 12px;
+    max-width: 848px;
+    width: 100%;
+    height: 84px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #000;
+    outline: none;
+
+    cursor: text;
+}
+
+/* цвета  */
+
+
+.color-list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    list-style: none;
+}
+
+.color-option {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selected {
+    border-color: #457cdc;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+
+.button {
+    margin-top: 12px;
+
+    width: 232px;
+    height: 36px;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #457cdc;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    cursor: pointer;
+}
+/* цвета */
+
+.favorite-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.favor-checkbox {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: #000;
+
+    cursor: pointer;
+}
+
+
+.notes-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.clear {
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    border-radius: 10px;
+    width: 368px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(11, 12, 13, 0.08), 0 8px 16px 0 rgba(11, 12, 13, 0.04), 0 1px 2px 0 rgba(11, 12, 13, 0.08);
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+}
+
+.note-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #292515;
+    word-break: break-all;
+}
+
+.note-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.note-icons img {
+    cursor: pointer;
+}
+
+
+.note-content {
+    padding: 12px;
+    word-wrap: break-word;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #000;
+}
+
+.zero {
+    margin-top: 138px;
+    margin: 138px auto 0;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+
+}
+
+.error {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #fff;
+    max-width: fit-content;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #f23d5b;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.done {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #fff;
+    max-width: 426px;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #47b27d;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+    
+}
+
+.massage-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    gap: 10px; 
+    position: fixed;
+    right: 64px;
+    bottom: 72px;
+}
+
+
+@media screen and (max-width: 789px) {
+    .note {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .note-content-block {
+        flex-direction: column;
+    }
+
+    .note-name {
+        max-width: 344px;
+        width: 100%;
+    }
+
+    .zero {
+        margin-top: 40px;
+    }
+
+    .massage-box {
+        right: 10px;
+        bottom: 15px;
+    }
+
+    .error p,
+    .done p {
+        max-width: 280px;
+    }
+}
